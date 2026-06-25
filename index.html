@@ -4,159 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maid Royal</title>
 
-    <title>Coffee House - Dịch Vụ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS riêng -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<section id="services" class="section services-section">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top cafe-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-cup-hot-fill logo-icon"></i>
+                <div>
+                    <span class="brand-name">Maid Royal</span>
+                    <small>Sweet Coffee & Dessert</small>
+                </div>
+            </a>
 
-    <div class="container">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="section-heading">
-            <span>DỊCH VỤ CỦA CHÚNG TÔI</span>
-            <h2>Trải Nghiệm Tuyệt Vời Tại Maid Royal</h2>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-book" href="#contact">
+                            <i class="bi bi-calendar-check"></i> Đặt bàn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Banner / Hero -->
+<section id="home" class="hero-banner">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/mp4/nen0.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <p class="welcome-text">Chào mừng đến với</p>
+
+                    <h1>Maid Royal</h1>
+
+                    <div class="coffee-line">
+                        <span></span>
+                        <i class="bi bi-cup-hot-fill"></i>
+                        <span></span>
+                    </div>
+
+                    <p class="hero-desc">
+                        Không gian cà phê ngọt ngào, dễ thương cùng những món bánh và đồ uống được phục vụ tận tình.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-main">
+                            <i class="bi bi-cup-hot"></i> Đặt bàn ngay
+                        </a>
+
+                        <a href="#menu" class="btn btn-outline-light btn-menu">
+                            <i class="bi bi-card-list"></i> Xem menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down">
+            <i class="bi bi-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About demo để khi bấm menu có chỗ cuộn xuống -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <p class="section-label">Về chúng tôi</p>
+            <h2>Đam mê tạo nên những tách cà phê tuyệt hảo</h2>
             <p>
-                Không chỉ là một quán cà phê, chúng tôi còn mang đến
-                không gian thư giãn, làm việc và những hoạt động thú vị
-                dành cho khách hàng.
+                Maid Royal mang đến không gian thư giãn, cà phê nguyên chất và những trải nghiệm gần gũi
+                cho khách hàng sau những giờ học tập và làm việc.
             </p>
         </div>
+    </section>
 
-        <div class="card-list">
+    <section id="menu" class="section-space"></section>
+    <section id="contact" class="section-space"></section>
 
-            <!-- Card 1 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service1.jpg" alt="Cà phê">
-                </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                <div class="card-content">
-                    <div class="icon">☕</div>
-
-                    <h3>Cà Phê Nguyên Chất</h3>
-
-                    <p>
-                        Hạt cà phê tuyển chọn từ Tây Nguyên,
-                        rang xay mỗi ngày giúp giữ nguyên
-                        hương vị thơm ngon.
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service2.jpg" alt="Làm việc">
-                </div>
-
-                <div class="card-content">
-                    <div class="icon">💻</div>
-
-                    <h3>Không Gian Làm Việc</h3>
-
-                    <p>
-                        Wifi tốc độ cao, bàn ghế thoải mái,
-                        phù hợp học tập, làm việc nhóm
-                        hoặc họp trực tuyến.
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service3.jpg" alt="Acoustic">
-                </div>
-
-                <div class="card-content">
-                    <div class="icon">🎵</div>
-
-                    <h3>Đêm Nhạc Acoustic</h3>
-
-                    <p>
-                        Chương trình âm nhạc cuối tuần với
-                        các nghệ sĩ trẻ mang đến những phút
-                        giây thư giãn đáng nhớ.
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service4.jpg" alt="Đọc sách">
-                </div>
-
-                <div class="card-content">
-                    <div class="icon">📚</div>
-
-                    <h3>Góc Giải Trí</h3>
-
-                    <p>
-                        Được giao lưu giải trí với các bạn nhân viên hầu gái xinh đẹp
-                        với những trò chơi vô cùng hấp dẫn
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service5.jpg" alt="Bánh ngọt">
-                </div>
-
-                <div class="card-content">
-                    <div class="icon">🍰</div>
-
-                    <h3>Bánh Ngọt Handmade</h3>
-
-                    <p>
-                        Các loại bánh được làm mới mỗi ngày,
-                        kết hợp hoàn hảo cùng đồ uống.
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="activity-card">
-                <div class="card-image">
-                    <img src="assets/images/service6.jpg" alt="Sự kiện">
-                </div>
-
-                <div class="card-content">
-                    <div class="icon">🎉</div>
-
-                    <h3>Tổ Chức Sự Kiện</h3>
-
-                    <p>
-                        Hỗ trợ tổ chức sinh nhật, họp mặt,
-                        workshop và các hoạt động cộng đồng.
-                    </p>
-
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
+    <!-- JS riêng -->
+    <script src="js/main.js"></script>
 </body>
 </html>
