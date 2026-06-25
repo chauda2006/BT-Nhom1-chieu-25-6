@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maid Royal Cafe</title>
+    <!-- Nhúng font chữ cao cấp từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Nhúng thư viện Bootstrap CSS (Cần thiết cho Navbar hoạt động) -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Nhúng Bootstrap Icons -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <!-- Nhúng Font Awesome (Để hiển thị icon mạng xã hội ở Footer) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <link rel="stylesheet" href="css/lienhe.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top cafe-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-cup-hot-fill logo-icon"></i>
+                <div>
+                    <span class="brand-name">Maid Royal</span>
+                    <small>Sweet Coffee & Dessert</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dichvu.html">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Gioithieu.html">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-book" href="#contact">
+                            <i class="bi bi-calendar-check"></i> Đặt bàn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LIÊN HỆ -->
+    <section class="contact-section">
+        <div class="contact-card">
+            
+            <!-- KHỐI BÊN TRÁI: KHU VỰC CHÈN ẢNH CỦA BẠN -->
+            <div class="contact-info-panel">
+                <div class="slider-container">
+                    <!-- ẢNH SỐ 1 (Thay bằng link ảnh thật của bạn) -->
+                    <div class="slide active" style="background-image: url('https://unsplash.com');"></div>
+                    
+                    <!-- ẢNH SỐ 2 (Thay bằng link ảnh thật của bạn) -->
+                    <div class="slide" style="background-image: url('https://unsplash.com');"></div>
+                    
+                    <!-- ẢNH SỐ 3 (Thay bằng link ảnh thật của bạn) -->
+                    <div class="slide" style="background-image: url('https://unsplash.com');"></div>
+                </div>
+
+                <!-- Lớp màu phủ sắc Hồng Tím Hoàng Gia giúp ảnh lung linh -->
+                <div class="panel-overlay"></div>
+                
+                <!-- Nội dung chữ hiển thị đè lên ảnh -->
+                <div class="panel-content">
+                    <div class="info-header">
+                        <span class="tagline">WELCOME TO THE COURT</span>
+                        <h2 class="section-title">Ghé Thăm <br><em>Không Gian</em> <br>Maid Royal</h2>
+                        <p class="section-desc">Hãy để các hầu gái hoàng gia phục vụ bạn những tách cà phê thượng hạng trong không gian vương giả.</p>
+                    </div>
+                    
+                    <div class="info-details">
+                        <div class="detail-block">
+                            <span class="detail-label">ĐỊA CHỈ VƯƠNG QUỐC</span>
+                            <p class="detail-value">123 Luxury Boulevard, Quận 1, TP. HCM</p>
+                        </div>
+                        <div class="detail-block">
+                            <span class="detail-label">HOTLINE ĐẶT BÀN</span>
+                            <p class="detail-value">1900 8888 &bull; 0123 456 789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Khối bên phải: Form điền thông tin màu sắc ngọt ngào -->
+            <div class="contact-form-panel">
+                <div class="form-title-area">
+                    <h3>Gửi Yêu Cầu Đến Các Maid</h3>
+                    <p>Hân hạnh được phục vụ Quý Khách</p>
+                </div>
+                
+                <form action="#" method="POST" class="luxury-form">
+                    <div class="input-wrapper">
+                        <input type="text" name="name" required placeholder="Họ và tên của bạn">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input type="email" name="email" required placeholder="Địa chỉ Email">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input type="text" name="subject" required placeholder="Bạn muốn các hầu gái chuẩn bị gì cho bạn?">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <textarea name="message" rows="4" required placeholder="Lời nhắn gửi đến vương triều Maid Royal..."></textarea>
+                    </div>
+                    
+                    <div class="button-wrapper">
+                        <button type="submit" class="premium-btn">
+                            <span class="btn-text">GỬI YÊU CẦU HOÀNG GIA</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- CHÂN TRANG (FOOTER) -->
+    <footer class="luxury-footer">
+        <div class="footer-wrap">
+            <div class="footer-grid">
+                
+                <div class="footer-col brand-col">
+                    <h3 class="footer-logo">MAID ROYAL<span>.</span></h3>
+                    <p class="brand-text">Trải nghiệm dịch vụ hầu gái quý tộc kết hợp cùng nghệ thuật pha chế chuẩn châu Âu.</p>
+                    <div class="social-row">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col links-col">
+                    <h4 class="col-title">VƯƠNG QUỐC</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Thực Đơn Hoàng Gia</a></li>
+                        <li><a href="#">Danh Sách Các Maid</a></li>
+                        <li><a href="#">Sự Kiện Đặc Biệt</a></li>
+                        <li><a href="#">Đặt Phòng VIP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col hours-col">
+                    <h4 class="col-title">GIỜ DIỄN RA YẾN TIỆC</h4>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="days">Ngày trong tuần</span>
+                            <span class="time">08:00 – 22:30</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Cuối tuần & Lễ</span>
+                            <span class="time">07:30 – 23:30</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-base">
+                <p class="copyright">&copy; 2026 Maid Royal Cafe. Crafted with Royal Passion.</p>
+                <div class="legal-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap JavaScript để menu mobile có thể đóng mở -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>

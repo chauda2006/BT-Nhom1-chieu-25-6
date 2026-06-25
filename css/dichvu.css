@@ -40,16 +40,16 @@ nav{
     top:0;
     width:100%;
     z-index:999;
-    background:rgba(255,255,255,0.1);
+    background:rgb(112, 3, 74);
     backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,0.2);
+    border-bottom:2px solid rgb(255, 174, 174);
 }
 
 .menu{
     display:flex;
     justify-content:center;
     list-style:none;
-    padding:15px 0;
+    padding:10px 0;
 }
 
 .menu li{
@@ -74,7 +74,7 @@ nav{
 /* ===== CONTENT TITLE ===== */
 .content{
     text-align:center;
-    margin-top:120px;
+    margin-top:130px;
     color:white;
         text-shadow:
         0 0 5px #ff85c2,
@@ -83,7 +83,7 @@ nav{
 }
 
 .content h1{
-    font-size:60px;
+    font-size:40px;
     text-transform:uppercase;
     letter-spacing:3px;
 
@@ -116,7 +116,7 @@ nav{
 .section-heading h2{
     margin-top:10px;
     font-size:42px;
-    color:#d61c7900;
+    color:#ff0080fd;
         text-shadow:
         0 0 5px #b5a6ae,
         0 0 10px #eeeeee,
