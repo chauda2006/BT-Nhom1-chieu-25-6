@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maid Royal</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS riêng -->
+    <title>Maid Royal Cafe</title>
+    <!-- Nhúng font chữ cao cấp từ Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Thư viện biểu tượng -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top cafe-navbar">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="bi bi-cup-hot-fill logo-icon"></i>
-                <div>
-                    <span class="brand-name">Maid Royal</span>
-                    <small>Sweet Coffee & Dessert</small>
+    <!-- LIÊN HỆ -->
+    <section class="contact-section">
+        <div class="contact-card">
+            
+            <!-- KHỐI BÊN TRÁI: KHU VỰC CHÈN ẢNH CỦA BẠN -->
+            <div class="contact-info-panel">
+                
+                <div class="slider-container">
+                    <!-- ẢNH SỐ 1 (Ảnh các bạn Maid bạn gửi) -->
+                    <div class="slide active" style="background-image: url('https://znews.vn');"></div>
+                    
+                    <!-- ẢNH SỐ 2 (Ảnh mẫu bánh ngọt/đồ uống signature) -->
+                    <div class="slide" style="background-image: url('https://unsplash.com');"></div>
+                    
+                    <!-- ẢNH SỐ 3 (Ảnh mẫu góc không gian quán) -->
+                    <div class="slide" style="background-image: url('https://unsplash.com');"></div>
                 </div>
-            </a>
 
+<<<<<<< HEAD
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,49 +73,132 @@
                         <span></span>
                         <i class="bi bi-cup-hot-fill"></i>
                         <span></span>
+=======
+                <!-- Lớp màu phủ sắc Hồng Tím Hoàng Gia giúp ảnh lung linh -->
+                <div class="panel-overlay"></div>
+                
+                <!-- Nội dung chữ hiển thị đè lên ảnh -->
+                <div class="panel-content">
+                    <div class="info-header">
+                        <span class="tagline">WELCOME TO THE COURT</span>
+                        <h2 class="section-title">Ghé Thăm <br><em>Không Gian</em> <br>Maid Royal</h2>
+                        <p class="section-desc">Hãy để các hầu gái hoàng gia phục vụ bạn những tách cà phê thượng hạng trong không gian vương giả.</p>
+>>>>>>> e74084d057a6808436e09de08c9a19a286b2ec21
                     </div>
-
-                    <p class="hero-desc">
-                        Không gian cà phê ngọt ngào, dễ thương cùng những món bánh và đồ uống được phục vụ tận tình.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-main">
-                            <i class="bi bi-cup-hot"></i> Đặt bàn ngay
-                        </a>
-
-                        <a href="#menu" class="btn btn-outline-light btn-menu">
-                            <i class="bi bi-card-list"></i> Xem menu
-                        </a>
+                    
+                    <div class="info-details">
+                        <div class="detail-block">
+                            <span class="detail-label">ĐỊA CHỈ VƯƠNG QUỐC</span>
+                            <p class="detail-value">123 Luxury Boulevard, Quận 1, TP. HCM</p>
+                        </div>
+                        <div class="detail-block">
+                            <span class="detail-label">HOTLINE ĐẶT BÀN</span>
+                            <p class="detail-value">1900 8888 &bull; 0123 456 789</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Khối bên phải: Form điền thông tin màu sắc ngọt ngào -->
+            <div class="contact-form-panel">
+                <div class="form-title-area">
+                    <h3>Gửi Yêu Cầu Đến Các Maid</h3>
+                    <p>Hân hạnh được phục vụ Quý Khách</p>
+                </div>
+                
+                <form action="#" method="POST" class="luxury-form">
+                    <div class="input-wrapper">
+                        <input type="text" name="name" required placeholder="Họ và tên của bạn">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input type="email" name="email" required placeholder="Địa chỉ Email">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input type="text" name="subject" required placeholder="Bạn muốn các hầu gái chuẩn bị gì cho bạn?">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <textarea name="message" rows="4" required placeholder="Lời nhắn gửi đến vương triều Maid Royal..."></textarea>
+                    </div>
+                    
+                    <div class="button-wrapper">
+                        <button type="submit" class="premium-btn">
+                            <span class="btn-text">GỬI YÊU CẦU HOÀNG GIA</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
         </div>
-
-        <a href="#about" class="scroll-down">
-            <i class="bi bi-chevron-down"></i>
-        </a>
     </section>
 
-    <!-- About demo để khi bấm menu có chỗ cuộn xuống -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <p class="section-label">Về chúng tôi</p>
-            <h2>Đam mê tạo nên những tách cà phê tuyệt hảo</h2>
-            <p>
-                Maid Royal mang đến không gian thư giãn, cà phê nguyên chất và những trải nghiệm gần gũi
-                cho khách hàng sau những giờ học tập và làm việc.
-            </p>
+    <!-- CHÂN TRANG (FOOTER) -->
+    <footer class="luxury-footer">
+        <div class="footer-wrap">
+            <div class="footer-grid">
+                
+                <div class="footer-col brand-col">
+                    <h3 class="footer-logo">MAID ROYAL<span>.</span></h3>
+                    <p class="brand-text">Trải nghiệm dịch vụ hầu gái quý tộc kết hợp cùng nghệ thuật pha chế chuẩn châu Âu.</p>
+                    <div class="social-row">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col links-col">
+                    <h4 class="col-title">VƯƠNG QUỐC</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Thực Đơn Hoàng Gia</a></li>
+                        <li><a href="#">Danh Sách Các Maid</a></li>
+                        <li><a href="#">Sự Kiện Đặc Biệt</a></li>
+                        <li><a href="#">Đặt Phòng VIP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col hours-col">
+                    <h4 class="col-title">GIỜ DIỄN RA YẾN TIỆC</h4>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="days">Ngày trong tuần</span>
+                            <span class="time">08:00 – 22:30</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Cuối tuần & Lễ</span>
+                            <span class="time">07:30 – 23:30</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-base">
+                <p class="copyright">&copy; 2026 Maid Royal Cafe. Crafted with Royal Passion.</p>
+                <div class="legal-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản dịch vụ</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
 
-    <section id="menu" class="section-space"></section>
-    <section id="contact" class="section-space"></section>
+    <!-- ĐOẠN JS ĐỂ TỰ ĐỘNG CHUYỂN ĐỔI ẢNH NỀN MƯỢT MÀ -->
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
 
-    <!-- JS riêng -->
-    <script src="js/main.js"></script>
+        // Tự động chuyển đổi sau mỗi 4 giây
+        setInterval(nextSlide, 4000);
+    </script>  
 </body>
 </html>
