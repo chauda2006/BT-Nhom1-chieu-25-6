@@ -34,23 +34,23 @@ body::after {
     inset: 0;
     width: 100%;
     height: 200%;
-    background: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+    background: url("https://www.transparenttextures.com/patterns/dark-matter.png");
     z-index: -1; /* Nằm trên lớp phủ tối */
     pointer-events: none; /* Quan trọng: Để bạn có thể click vào các nút/link bên dưới */
 }
 
 .stars1 {
-    animation: moveStars 50s linear infinite, twinkle 2s infinite alternate;
+    animation: moveStars 40s linear infinite, twinkle 2s infinite alternate;
 }
 
 .stars2 {
-    opacity: 0.5;
+    opacity: 0.6;
     animation: moveStars 100s linear infinite, twinkle 3s infinite alternate;
 }
 
 .stars3 {
-    opacity: 0.3;
-    animation: moveStars 150s linear infinite, twinkle 4s infinite alternate;
+    opacity: 0.9;
+    animation: moveStars 170s linear infinite, twinkle 4s infinite alternate;
 }
 
 @keyframes moveStars {
