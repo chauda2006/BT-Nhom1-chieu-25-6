@@ -16,8 +16,24 @@ body{
     max-width:1200px;
     margin:auto;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #073c52ae;/* tô màu menu*/
 
-/* =========================
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+
+    box-shadow: /* tăng độ sáng thanh menu*/
+        0 0 15px #00d4ff,
+        0 0 30px #00d4ff,
+        0 0 60px #00d4ff;
+}
+
    SERVICE SECTION
 
 .services-section{
@@ -54,7 +70,7 @@ body{
     line-height:1.8;
 }
 
-/* =========================
+
    CARD GRID
 
 .card-list{
@@ -63,7 +79,6 @@ body{
     gap:30px;
 }
 
-/* =========================
    CARD
 
 .activity-card{
@@ -138,7 +153,7 @@ body{
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE*/
 
 @media(max-width:992px){
 
@@ -157,7 +172,7 @@ body{
     .card-list{
         grid-template-columns:1fr;
     }
-
+}
 * {
     margin: 0;
     padding: 0;
